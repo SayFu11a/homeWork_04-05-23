@@ -1,0 +1,103 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указык содержимого  -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+   <!--  Заголовок станицы в браузере  -->
+   <title>Tabs</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/nullstyle.css">
+   <! Кодировка страницы>
+      <meta http-equiv="Content type" content="text/html;chaster=UTF=8" />
+      <meta name="viewport" content="width=device-width">
+</head>
+<!-- Отображает тесло страницы -->
+
+<body>
+   <div class="wrapper">
+      <div class="header">
+         <div class="header-img"><img src="img/03.png" alt=""></div>
+         <div class="header-img"><img src="img/07.png" width="32" height="32" alt=""></div>
+
+         <div class="header-title">Калькулятор для расчета загрязнения атмосферы выбросами</div>
+      </div>
+      <div class="line"></div>
+      <div class="content">
+         <div class="text">
+            <p>Расчет загрязнения атмосферы выбросами
+               одиночного источника будет производится по формуле:
+            </p>
+            <div class="text-img">
+               <img class="text-img-img" src="img/06.png" alt="">
+            </div>
+         </div>
+
+         <div class="forms">
+            <div class="forms-item">
+               <input type="text" id="valueА" value="50" placeholder="А">
+               <p> А - коэффициент, зависящий от температурной стратификации атмосферы</p>
+            </div>
+
+            <div class="forms-item">
+               <input type="text" id="valueМ" value="20" placeholder="М">
+               <p> М (г/с) - масса вредного вещества, выбрасываемого в атмосферу в единицу времени;</p>
+            </div>
+
+            <div class="forms-item">
+               <input type="text" id="valueF" value="2.5" placeholder="F">
+               <p>F - безразмерный коэффициент, учитывающий скорость оседания вредных веществ в атмосферном воздухе;</p>
+            </div>
+
+            <div class="forms-item">
+               <input type="text" id="valuem" value="3" placeholder="m">
+               <input type="text" id="valuen" value="1.2" placeholder="n">
+               <p> m и n - коэффициенты. учитывающие условия выхода газо-воздушной смеси из устья источника выброса;
+               </p>
+            </div>
+
+            <div class="forms-item">
+               <input type="text" id="valuen2" value="1" placeholder="n2">
+               <p> n2 - безразмерный коэффициент, учитывающий влияние рельефа местности, в случае ровной или
+                  слабопересеченной местности с перепадом высот, не превышающим 50 м на 1 км, n2 = 1; </p>
+            </div>
+
+            <div class="forms-item">
+               <input type="text" id="valueH" value="2" placeholder="H">
+               <p> H (м) - высота источника выброса над уровнем земли (для наземных источников при расчетах принимается
+                  Н = 2 м);</p>
+            </div>
+
+            <div class="forms-item">
+               <input type="text" id="valueV" value="4" placeholder="V1">
+               <p> V1 (м3/с) - расход газо-воздушной смеси</p>
+            </div>
+
+            <div class="forms-item">
+               <input type="text" id="valueT" value="41" placeholder="Т">
+               <p> Т(°С) - разность между температурой выбрасываемой газо-воздушной смеси Тг и температурой окружающего
+                  атмосферного воздуха Тв;</p>
+            </div>
+
+         </div>
+
+         <div class="button">
+            <button id="button1">
+               Рассчитать
+            </button>
+
+            <div id="result">
+
+            </div>
+         </div>
+
+
+      </div>
+   </div>
+   <script src="./js/app.js"></script>
+   <script src="./js/JJ Articles Parser.js"></script>
+
+</body>
+
+</html>
